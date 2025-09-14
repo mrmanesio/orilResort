@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrilResort - Инвестиции в базу отдыха | До 10% в месяц</title>
+    <meta name="description" content="Инвестируйте в прибыльную базу отдыха OrilResort на берегу реки Орель. Доходность от 7% до 10% в месяц. Реальный проект с готовым бизнес-планом.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/logo.png" alt="OrilResort" class="logo-img">
+                </div>
+                <nav class="nav">
+                    <a href="#plans" class="nav-link">Тарифы</a>
+                    <a href="#project" class="nav-link">О проекте</a>
+                    <a href="#advantages" class="nav-link">Преимущества</a>
+                    <a href="#gallery" class="nav-link">Галерея</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </nav>
+                <button class="btn btn-primary" id="loginBtn">Личный кабинет</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('img/bg.jpg')">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Инвестируйте в <span class="highlight">OrilResort</span><br>
+                    и получайте до <span class="highlight">10% в месяц</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Прибыльная база отдыха на берегу реки Орель.<br>
+                    Реальный проект с готовым бизнес-планом и высокой доходностью.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">7-10%</span>
+                        <span class="stat-label">доходность в месяц</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">от $500</span>
+                        <span class="stat-label">минимальная инвестиция</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12 мес</span>
+                        <span class="stat-label">срок окупаемости</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" id="investBtn">Начать инвестировать</button>
+                    <button class="btn btn-secondary btn-large" id="learnMoreBtn">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Plans -->
+    <section class="plans" id="plans">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Выберите свой инвестиционный план</h2>
+                <p class="section-subtitle">4 тарифа с разной доходностью и сроками выплат</p>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Стартовый</h3>
+                        <div class="plan-rate">7%</div>
+                        <span class="plan-period">в месяц</span>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">💰</span>
+                            <span>Выплаты каждые 3 месяца</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⏱️</span>
+                            <span>Возврат основной суммы через год</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📈</span>
+                            <span>Стабильный доход</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline plan-btn">Выбрать план</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Оптимальный</h3>
+                        <div class="plan-rate">8%</div>
+                        <span class="plan-period">в месяц</span>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">💰</span>
+                            <span>Выплаты каждые 6 месяцев</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⏱️</span>
+                            <span>Возврат основной суммы через год</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📈</span>
+                            <span>Повышенная доходность</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline plan-btn">Выбрать план</button>
+                </div>
+
+                <div class="plan-card plan-popular">
+                    <div class="plan-badge">Популярный</div>
+                    <div class="plan-header">
+                        <h3 class="plan-title">Премиум</h3>
+                        <div class="plan-rate">9%</div>
+                        <span class="plan-period">в месяц</span>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">💰</span>
+                            <span>Выплаты каждые 9 месяцев</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⏱️</span>
+                            <span>Возврат основной суммы через год</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📈</span>
+                            <span>Высокая доходность</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary plan-btn">Выбрать план</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-title">Максимум</h3>
+                        <div class="plan-rate">10%</div>
+                        <span class="plan-period">в месяц</span>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">💰</span>
+                            <span>Выплаты через год</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⏱️</span>
+                            <span>Возврат основной суммы через год</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📈</span>
+                            <span>Максимальная доходность</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline plan-btn">Выбрать план</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Project -->
+    <section class="project" id="project">
+        <div class="container">
+            <div class="project-content">
+                <div class="project-info">
+                    <h2 class="section-title">О проекте OrilResort</h2>
+                    <p class="project-description">
+                        База отдыха на живописном берегу реки Орель — это уникальная возможность 
+                        инвестировать в прибыльный туристический бизнес с высокой доходностью.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <span class="feature-number">15</span>
+                            <span class="feature-text">комфортных домиков</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">2</span>
+                            <span class="feature-text">современные бани</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">6</span>
+                            <span class="feature-text">уютных беседок</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">$53,400</span>
+                            <span class="feature-text">прогнозируемый доход в месяц</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <img src="img/renders/baza_otdyha_vid_sverhu_1.webp" alt="Вид сверху на базу отдыха" class="project-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Почему OrilResort — выгодная инвестиция?</h2>
+                <p class="section-subtitle">Реальные преимущества для ваших вложений</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">🎯</div>
+                    <h3 class="advantage-title">Высокая доходность</h3>
+                    <p class="advantage-text">От 7% до 10% в месяц — значительно выше банковских депозитов и большинства инвестиционных инструментов</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🏗️</div>
+                    <h3 class="advantage-title">Реальный проект</h3>
+                    <p class="advantage-text">База отдыха уже функционирует, есть готовые визуализации и детальный бизнес-план развития</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">📈</div>
+                    <h3 class="advantage-title">Быстрая окупаемость</h3>
+                    <p class="advantage-text">Проект окупится за 12-16 месяцев, после чего будет приносить стабильную прибыль</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🌊</div>
+                    <h3 class="advantage-title">Уникальное место</h3>
+                    <p class="advantage-text">Живописный берег реки Орель — идеальное место для отдыха с высоким спросом круглый год</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">💼</div>
+                    <h3 class="advantage-title">Прозрачность</h3>
+                    <p class="advantage-text">Полная отчетность по доходам и расходам, возможность отслеживать развитие проекта</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">🎲</div>
+                    <h3 class="advantage-title">Низкий порог входа</h3>
+                    <p class="advantage-text">Начните инвестировать уже с $500 и выберите подходящий тарифный план</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Галерея проекта</h2>
+                <p class="section-subtitle">Визуализации и планы развития базы отдыха</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/renders/baza_otdyha_vizualizacii_11.webp" alt="Визуализация базы отдыха" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Общий вид базы</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/renders/gostevoj_domik_modulnyj_vid1.webp" alt="Гостевой домик" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Гостевые домики</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/renders/barnhaus_vidy1.webp" alt="Барнхаус" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Барнхаус</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/renders/kafe_vid2.webp" alt="Кафе" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Кафе</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/renders/sfera_modul_vid1.webp" alt="Сфера модуль" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Сфера модуль</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/renders/gostinichnyj_i_administrativnyj_blok_vid1.webp" alt="Административный блок" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Административный блок</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Готовы начать инвестировать?</h2>
+                <p class="cta-subtitle">
+                    Присоединяйтесь к инвесторам OrilResort и получайте стабильный доход 
+                    от прибыльного туристического бизнеса
+                </p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-large" id="startInvestBtn">Начать инвестировать</button>
+                    <div class="cta-info">
+                        <span class="cta-text">Минимальная сумма: $500</span>
+                        <span class="cta-text">Доходность: 7-10% в месяц</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="OrilResort" class="logo-img">
+                    </div>
+                    <p class="footer-text">
+                        Инвестиции в прибыльную базу отдыха<br>
+                        на берегу реки Орель
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Контакты</h4>
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <a href="mailto:invest@orilresort.com" class="contact-link">invest@orilresort.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Телефон:</span>
+                        <a href="tel:+380000000000" class="contact-link">+38 (000) 000-00-00</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram">
+                            <img src="img/icons/instagram.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="#" class="social-link" title="Telegram">
+                            <img src="img/icons/telegram.png" alt="Telegram" class="social-icon">
+                        </a>
+                        <a href="#" class="social-link" title="TikTok">
+                            <img src="img/icons/tiktok.png" alt="TikTok" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 OrilResort. Все права защищены.</p>
+                <p class="footer-disclaimer">
+                    Инвестиции связаны с рисками. Прошлые результаты не гарантируют будущую доходность.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
