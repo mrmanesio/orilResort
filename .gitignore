@@ -72,7 +72,6 @@ temp/
 *.orig
 
 # OS generated files
-Icon?
 .DocumentRevisions-V100
 .fseventsd
 .TemporaryItems
