@@ -760,7 +760,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero {
-        padding: 2rem 0;
+        padding: 6rem 0 2rem;
         min-height: 80vh;
     }
     
@@ -904,6 +904,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero {
+        padding: 5rem 0 2rem;
         min-height: 70vh;
     }
     
