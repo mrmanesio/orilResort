@@ -307,7 +307,7 @@ function showNotification(message, type = 'info') {
 
 // Counter animation for statistics
 function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number, .feature-number');
+    const counters = document.querySelectorAll('.feature-number');
     
     const observerOptions = {
         threshold: 0.5
@@ -352,49 +352,54 @@ function animateCounters() {
 
 // Mobile menu functionality
 function initMobileMenu() {
-    // Create mobile menu button
-    const mobileMenuBtn = document.createElement('button');
-    mobileMenuBtn.className = 'mobile-menu-btn';
-    mobileMenuBtn.innerHTML = '☰';
-    mobileMenuBtn.style.cssText = `
-        display: none;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-        padding: 0.5rem;
-    `;
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const nav = document.querySelector('.nav');
     
-    // Insert mobile menu button
-    const headerContent = document.querySelector('.header-content');
-    headerContent.insertBefore(mobileMenuBtn, headerContent.lastElementChild);
+    if (!mobileMenuBtn || !nav) return;
     
-    // Mobile menu functionality
+    // Mobile menu toggle functionality
     mobileMenuBtn.addEventListener('click', () => {
-        const nav = document.querySelector('.nav');
-        nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-        nav.style.position = 'absolute';
-        nav.style.top = '100%';
-        nav.style.left = '0';
-        nav.style.right = '0';
-        nav.style.background = 'white';
-        nav.style.flexDirection = 'column';
-        nav.style.padding = '1rem';
-        nav.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
+        nav.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+        
+        // Update burger icon
+        const burgerIcon = mobileMenuBtn.querySelector('.burger-icon');
+        if (nav.classList.contains('active')) {
+            burgerIcon.textContent = '✕';
+        } else {
+            burgerIcon.textContent = '☰';
+        }
     });
     
-    // Show mobile menu button on small screens
+    // Close menu when clicking on nav links
+    const navLinks = nav.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.querySelector('.burger-icon').textContent = '☰';
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            nav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.querySelector('.burger-icon').textContent = '☰';
+        }
+    });
+    
+    // Handle screen size changes
     const checkScreenSize = () => {
-        if (window.innerWidth <= 768) {
-            mobileMenuBtn.style.display = 'block';
-        } else {
-            mobileMenuBtn.style.display = 'none';
-            document.querySelector('.nav').style.display = 'flex';
+        if (window.innerWidth > 768) {
+            nav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            mobileMenuBtn.querySelector('.burger-icon').textContent = '☰';
         }
     };
     
     window.addEventListener('resize', checkScreenSize);
-    checkScreenSize();
 }
 
 // Parallax effect for hero section
